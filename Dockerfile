@@ -1,4 +1,5 @@
 FROM docker.io/websphere-liberty:javaee8
+USER root
 RUN mkdir -p /my-special-folder
 COPY Dockerfile /my-special-folder
 COPY target/simple-stuff.war /config/dropins/
